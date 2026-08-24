@@ -50,6 +50,22 @@
             // A static class is a class marked with 'static' that contains only static members and cannot be inherited. No, you CANNOT create objects (instances) from it.
 
             #endregion
+
+            #region Q4 Extension Methods
+
+            // a) What is an Extension Method?
+            // It allows developers to add new methods to existing types without modifying the original code, inheriting from it, or recompiling it.
+
+            // b) What keyword must be used in the first parameter of an extension method?
+            // The 'this' keyword preceding the parameter type.
+
+            // c) Where must an extension method be declared?
+            // Inside a top-level static class as a static method.
+
+            // d) Can an extension method access private members of the class it extends?
+            // No, extension methods can only access public (and internal, if in the same assembly) members of the extended class.
+
+            #endregion
         }
     }
 }
