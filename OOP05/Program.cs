@@ -34,6 +34,22 @@
             // e) Give one situation where Deep Copy would be safer than Shallow Copy.
             // When cloning a complex object (like a Shipment with an Address or Items list) where you want to modify the copy's internal properties without unintentionally altering the original source data.
             #endregion
+
+            #region Q3 Static Members
+
+            // a) What is a static field, and how is it different from an instance field?
+            // A static field belongs to the class itself and is shared among all instances (stored once in RAM). An instance field belongs to individual objects and each instance gets its own copy.
+
+            // b) What is a static method? Can a static method directly access instance members?
+            // A static method belongs to the class and can be invoked without instantiating an object. It CANNOT directly access instance members because it operates without a 'this' context.
+
+            // c) What is a static constructor, and when is it executed?
+            // A static constructor initializes static data or executes code once before the first instance is created or any static members are referenced. It is called automatically by the CLR.
+
+            // d) What is a static class? Can you create an object from a static class?
+            // A static class is a class marked with 'static' that contains only static members and cannot be inherited. No, you CANNOT create objects (instances) from it.
+
+            #endregion
         }
     }
 }
