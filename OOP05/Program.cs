@@ -66,6 +66,22 @@
             // No, extension methods can only access public (and internal, if in the same assembly) members of the extended class.
 
             #endregion
+
+            #region Q5 Partial Classes and Partial Methods
+
+            // a) What is a Partial Class?
+            // A feature that allows the definition of a single class to be split across multiple .cs source files within the same assembly.
+
+            // b) Why would a developer split one class into multiple files?
+            // To improve maintainability in large codebases, separate concerns (e.g., core logic vs tracking logic), or preserve custom logic alongside auto-generated code.
+
+            // c) What is a Partial Method?
+            // A method declared in one partial class file (signature) and optionally implemented in another partial class file.
+
+            // d) What happens if a declared partial method has no implementation?
+            // The C# compiler removes the method declaration, its call sites, and any performance overhead during compilation (zero runtime impact).
+
+            #endregion
         }
     }
 }
